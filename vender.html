@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Venda seu produto!</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="index.html" class="logo">Or<span>gâ</span>n<span>i</span>K</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Início</a></li>
+                <li class="nav-item"><a href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a href="loja.html">Loja</a></li>
+                <li class="nav-item"><a href="vender.html">Vender</a></li>
+                <li class="nav-item"><a href="comunidade.html">Comunidade</a></li>
+                <i class='bx bx-search'></i>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header> <br><br> <br><br><br>
+
+    <body>
+        <div class="container">
+            <h1 class="tex-h1">Venda seu Produto</h1> <br><br><br><br>
+            <form action="loja.html" method="post" enctype="multipart/form-data">
+                <label for="titulo">Título do Produto</label>
+                <input type="text" id="titulo" name="titulo" required>
+    
+                <label for="descricao">Descrição do Produto</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+    
+                <label for="preco">Preço (R$)</label>
+                <input type="number" id="preco" name="preco" step="0.01" required>
+                <div class="data-de-nascimento">
+                    <select name="dia" class="data-info">
+                        <option value="kg">Kg</option>
+                        <option value="un">Unidade</option>
+                    </select> <br><br><br>
+    
+                <label for="imagem">Imagem do Produto</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*" required>
+    
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+    </body>
+    </html>
